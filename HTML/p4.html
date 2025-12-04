@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+    opacity: 0.6;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .port-section {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+            color: white;
+        }
+
+        .port-section h2 {
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="port-section">
+        <h1>Portfolio 4</h1>
+        <h2>Computer Hardware and Software</h2>
+
+        <p>
+        <b>Hardware vs Software</b><br><br>
+
+        <b>Hardware</b><br>
+        Pertains to the physical components present in a computer that physically carry out the workload. 
+        These include the processor, memory, storage devices, motherboard, PSU, input/output devices, and peripherals.
+        <br><br>
+
+        <b>Software</b><br>
+        Refers to the non-physical programs and procedures that tell the hardware what to do. 
+        Divided into system software, utility software, and application software.
+        </p>
+
+        <h2>Hardware</h2>
+        <p>
+        Hardware refers to the physical components of a computer system—such as the CPU, memory, storage devices, 
+        and input/output peripherals—that work together to perform computing tasks. Major components include the 
+        CPU, RAM, storage devices, motherboard, PSU, input devices, output devices, and peripherals.
+        </p>
+
+        <h2>Software</h2>
+        <p>
+        Software refers to the non-physical programs and procedures that instruct hardware on what tasks to perform. 
+        It is divided into:
+        <br><br>
+        • <b>System Software</b> — operating systems, device drivers<br>
+        • <b>Utility Software</b> — antivirus, file management, cleanup tools<br>
+        • <b>Application Software</b> — word processors, spreadsheets, browsers, graphics tools
+        </p>
+
+        <h2>Types of Software</h2>
+        <p>
+        <b>System Software</b><br>
+        Manages and controls computer hardware; includes Windows, Linux, macOS, and device drivers.
+        <br><br>
+
+        <b>Utility Software</b><br>
+        Performs maintenance and optimization; includes antivirus programs, file compression tools, disk cleanup.
+        <br><br>
+
+        <b>Application Software</b><br>
+        Allows users to perform specific tasks such as document creation, data analysis, browsing, and design.
+        </p>
+
+        <h2>Analysis</h2>
+        <p>
+        Computers are perhaps the greatest invention of the last century. Naturally, a complex construct consists of multiple parts 
+        facilitating the processes involved in computing. These are categorized into hardware and software. 
+        <br><br>
+        Hardware encompasses the physical components, such as the CPU, RAM, storage, motherboard, and peripherals. 
+        Software refers to the programs that instruct the hardware, split into system, utility, and application software. 
+        <br><br>
+        Both work in tandem to serve the user's needs. Computers are used in companies, universities, hospitals, and more. 
+        Their contribution to modern life is immense, improving quality of life in ways once unimaginable.
+        </p>
+
+        <h2>References</h2>
+        <p>
+        • Cage, G. W. (2018). Computer Hardware.<br>
+        • Khan, A. (2025). Computer Hardware – The Foundation of Modern Computing.<br>
+        • Cisco Networking Academy (2023). Introduction to PC Hardware.<br>
+        • International Journal of Advances in Engineering and Management (2023). Importance of Computer Hardware.<br>
+        • Kadapa Institute of Technology. The Architecture of Computer Hardware and System Software.
+        </p>
+    </div>
+
+<script>
+window.onload = function () {
+    setTimeout(() => {
+        document.getElementById("intro-overlay").classList.add("fade-out");
+    }, 20);
+};
+</script>
+</body>
+</html>

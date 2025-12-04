@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+    opacity: 0.6;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .port-section {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 750px;
+            border: 2px solid white;
+        }
+        .port-section h2 {
+    margin-bottom: 5px;
+    margin-top: 0px;   
+}
+    </style>
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div style="color:white;" class="port-section">
+        <h1 >Portfolio 2</h1>
+        <h2>Information Systems</h2>
+
+
+<p>
+
+<h2>Data vs Information</h2>
+<p>
+<b>Data</b><br>
+• Raw facts, figures, symbols or observations lacking meaning until processed.<br>
+• Can be qualitative or quantitative.<br><br>
+<b>Information</b><br>
+• Processed and organized data provided with context.<br>
+• Contextualized data.
+</p>
+
+
+<h2>Information Systems</h2>
+<p>
+• A structured setup of people, technology, processes and data working together to accomplish tasks for ease of
+management.
+</p>
+
+
+<h2>Types of Information Systems</h2>
+<p>
+<b>Transaction Processing Systems (TPS)</b><br>
+• Handles day-to-day operations, fast and accurate for large volumes of iterative data.<br><br>
+<b>Management Information Systems (MIS)</b><br>
+• Organizes and summarizes data to support structured decision-making.<br><br>
+<b>Decision Support Systems (DSS)</b><br>
+• Provides possibilities, outcomes and risks for decisions.<br><br>
+<b>Executive Information Systems (EIS)</b><br>
+• Provides executives with access to internal and external information such as financial performance.<br><br>
+<b>Customer Relationship Management (CRM)</b><br>
+• Gathers customer purchase history, feedback and preferences.<br><br>
+<b>Knowledge Management Systems (KMS)</b><br>
+• Collects, organizes and shares organizational knowledge.
+</p>
+
+
+<h2>Analysis</h2>
+<p>
+Information systems are vital to modern organizations. They expedite tasks involving large volumes of data that would
+otherwise require significant manpower. To understand their function, one must distinguish between raw data and processed
+information.
+<br><br>
+Information systems come in several types, each aiding specific organizational needs—from TPS handling daily operations to
+KMS preserving institutional knowledge.
+</p>
+
+
+<h2>References</h2>
+<p>
+• iSchool at Syracuse University. Types of information systems.<br>
+• GeeksforGeeks. Difference between information and data.<br>
+• Beal, V. (2022). What is data?<br>
+• ITL Education Solutions Limited (2012). Database Management Systems.<br>
+• Saini, K. (2025). Six types of information systems.
+</p></div>
+</body>
+    </div>
+    
+<script>
+window.onload = function () {
+    setTimeout(() => {
+        const overlay = document.getElementById("intro-overlay");
+        overlay.classList.add("fade-out");
+    }, 20); 
+};
+</script>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1; 
+            transition: opacity 1.5s ease;
+        }
+
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .port-section {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+            color: white;
+        }
+
+        .port-section h1, .port-section h2 {
+            text-align: center;
+            color: #fff;
+        }
+        
+        .port-section h2 {
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #333;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white; 
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #222;
+        }
+
+        tr:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="port-section">
+        <h1>Portfolio 5</h1>
+        <h2>Motherboard Form Factors</h2>
+        <br>
+        <p>
+            The motherboard is a **core component** of a functioning computer. It functions as the medium of interaction between all the components and is integral for the computer to operate[cite: 4]. It allows for **intercomponent communication** inside the computer and facilitates the coordination of hardware functions[cite: 5].
+        </p>
+
+        <h3>Motherboard Components</h3>
+        <p>A modern motherboard is generally composed of the following components:</p>
+        <ul>
+            <li>The **CPU socket**, where the CPU is installed.</li>
+            <li>The **DIMM slots**, or more conventionally known as the **RAM slots**, where system memory is inserted.</li>
+            <li>The **chipset**, where the communication between the CPU, memory, and peripherals is facilitated.</li>
+            <li>The **expansion slots**, where graphics cards, sound cards, or network adapters are inserted.</li>
+            <li>The **storage connectors**, where storage devices such as HDDs or SSDs are connected.</li>
+            <li>The **power connectors**, where power is received from the power supply and is distributed to the motherboard and its components.</li>
+            <li>The **BIOS chips**, where firmware is located that tests the components.</li>
+            <li>The **I/O ports**, located at the back of the motherboard to connect to peripherals.</li>
+        </ul>
+
+        <h3>Motherboard Types (Form Factors)</h3>
+        <p>Given the generally well defined makeup of a motherboard, variations of motherboards have been made to suit specific purposes and system requirements.</p>
+        <ul>
+            <li>The most common motherboard types are the **ATX**, the **Micro-ATX**, and the **Mini-ITX**. They serve as the industry benchmark for their balance between compatibility, performance, and size.</li>
+            <li>**High-end or specialized motherboards**, such as the **Extended-ATX**, are a variation of the ATX design and are typically used for server or workstation builds that require higher end hardware.</li>
+            <li>Older boards such as the **AT**, **LPX**, and **Mini-ATX** have been obsoleted by newer boards.</li>
+            <li>The **BTX Motherboard** and the **Pico BTX Motherboard** were experimental and never gained traction among users.</li>
+        </ul>
+
+        <h2>Detailed Comparison of Motherboard Form Factors</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Form Factor</th>
+                    <th>Build (Dimensions)</th>
+                    <th>CPU Slots</th>
+                    <th>Memory Slots</th>
+                    <th>Chipset</th>
+                    <th>BIOS</th>
+                    <th>PCI Slots</th>
+                    <th>SATA</th>
+                    <th>Built-in Features / Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>AT Motherboard</strong></td>
+                    <td>350 mm x 305 mm</td>
+                    <td>1 (PGA/ZIF)</td>
+                    <td>4-6 (SIMM)</td>
+                    <td>Intel 486/586 series</td>
+                    <td>Legacy BIOS</td>
+                    <td>3-4 (PCI/ISA)</td>
+                    <td>None (IDE-based)</td>
+                    <td>Bulky size, many I/O ports, outdated; no onboard USB.</td>
+                </tr>
+                <tr>
+                    <td><strong>ATX Motherboard</strong></td>
+                    <td>305 mm x 244 mm</td>
+                    <td>1</td>
+                    <td>2-4 (DIMM)</td>
+                    <td>Intel Z690, AMD X670</td>
+                    <td>UEFI/EFI OS</td>
+                    <td>4-7 (PCIe/PCI)</td>
+                    <td>4-10</td>
+                    <td>Mainstream design, integrated I/O panel, optimized airflow.</td>
+                </tr>
+                <tr>
+                    <td><strong>BTX Motherboard</strong></td>
+                    <td>325 mm x 267 mm</td>
+                    <td>1</td>
+                    <td>2-4 (DIMM)</td>
+                    <td>Intel 900 series</td>
+                    <td>BIOS/EFI</td>
+                    <td>3-4 (PCIe/PCI)</td>
+                    <td>4-6</td>
+                    <td>Reversed layout for better cooling. failed to gain popularity.</td>
+                </tr>
+                <tr>
+                    <td><strong>Extended-ATX Motherboard</strong></td>
+                    <td>305 mm x 330 mm</td>
+                    <td>1-2 (for server/workstation)</td>
+                    <td>4-8 (DIMM)</td>
+                    <td>Intel X299, AMD TRX40</td>
+                    <td>UEFI/EFI OS</td>
+                    <td>7-8 (PCIe/PCI)</td>
+                    <td>6-10</td>
+                    <td>Large format for high-end builds, supports dual CPUs and multi-GPU.</td>
+                </tr>
+                <tr>
+                    <td><strong>LPX Motherboard</strong></td>
+                    <td>229 mm x 330 mm</td>
+                    <td>1 (PGA/ZIF)</td>
+                    <td>2-4 (SIMM)</td>
+                    <td>Intel 486/Pentium</td>
+                    <td>Legacy BIOS</td>
+                    <td>Riser Card (PCI/ISA)</td>
+                    <td>IDE</td>
+                    <td>Compact, used in slim desktops; now obsolete.</td>
+                </tr>
+                <tr>
+                    <td><strong>Micro-ATX Motherboard</strong></td>
+                    <td>244 mm x 244 mm</td>
+                    <td>1</td>
+                    <td>2-4 (DIMM)</td>
+                    <td>Intel Z690, AMD X670</td>
+                    <td>UEFI/EFI OS</td>
+                    <td>4 (PCIe/PCI)</td>
+                    <td>4-8</td>
+                    <td>Compact and affordable; ideal balance of performance and size.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mini ITX Motherboard</strong></td>
+                    <td>170 mm x 170 mm</td>
+                    <td>1</td>
+                    <td>2 (DIMM)</td>
+                    <td>Intel/AMD current gen</td>
+                    <td>UEFI/EFI OS</td>
+                    <td>1 (PCle x16)</td>
+                    <td>4-6</td>
+                    <td>Smallest consumer board; ideal for compact PCs and HTPCs.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mini-ATX Motherboard</strong></td>
+                    <td>284 mm x 208 mm</td>
+                    <td>1</td>
+                    <td>2-4 (DIMM)</td>
+                    <td>Early Pentium chipsets</td>
+                    <td>Legacy BIOS</td>
+                    <td>4 (PCI)</td>
+                    <td>Used IDE</td>
+                    <td>Older mid-size form factor; short-lived between ATX and Micro-ATX.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pico BTX Motherboard</strong></td>
+                    <td>203 mm x 267 mm</td>
+                    <td>1</td>
+                    <td>2 (DIMM)</td>
+                    <td>BTX chipsets</td>
+                    <td>BIOS/EFI</td>
+                    <td>2-4</td>
+                    <td>Ultra-compact</td>
+                    <td>Smallest BTX variant; limited use in OEM systems.</td>
+                </tr>
+                <tr>
+                    <td><strong>Standard-ATX Motherboard</strong></td>
+                    <td>305 mm x 244 mm</td>
+                    <td>1</td>
+                    <td>2-4 (DIMM)</td>
+                    <td>Intel Z690, AMD X670</td>
+                    <td>UEFI/EFI OS</td>
+                    <td>4-7 (PCIe/PCI)</td>
+                    <td>4-10</td>
+                    <td>Equivalent to ATX; same specifications and layout.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>References</h2>
+        <p>
+            • HP. (2024, April). What is a chipset? Computer motherboard component guide. HP Tech Takes. https://www.hp.com/us-en/shop/tech-takes/what-is-a-chipset <br>
+            • Micro Center. (n.d.). Anatomy of a motherboard. Micro Center Tech Center. https://www.microcenter.com/tech_center/article/11166/anatomy-of-a-motherboard br>
+            • Corsair. (n.d.). ATX vs Micro ATX vs Mini ITX: What's the difference? Corsair Explorer. https://www.corsair.com/us/en/explorer/diy-builder/cases/atx-vs-microatx-vs-mini-itx-whats-the-differ ence <br>
+            • Overclockers UK. (2021). Motherboard form factors explained: Everything you need to know. Overclockers Blog. https://www.overclockers.co.uk/blog/motherboard-form-factors-explained-everything-you-need-to-know <br>
+            • BuildComputers.net. (n.d.). Motherboard form factors: Guide to motherboard sizes. BuildComputers. https://www.buildcomputers.net/motherboard-form-factors.html 
+        </p>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("intro-overlay").classList.add("fade-out");
+            }, 20);
+        };
+    </script>
+</body>
+</html>

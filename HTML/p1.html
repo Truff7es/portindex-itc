@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+    opacity: 0.6;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .port-section {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 750px;
+            border: 2px solid white;
+        }
+        .port-section h2 {
+    margin-bottom: 5px; 
+    margin-top: 0px;    
+}
+    </style>
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div style="color:white;" class="port-section">
+        <h1 >Portfolio 1</h1>
+        <h2>Computing Disciplines</h2>
+<p>
+<b>Computer Science</b><br>
+• focuses on the theories involving computing, algorithms and principles of computation<br>
+• Career paths: Software development, Machine Learning, Analytics, Web development, Cybersecurity<br>
+• Key skills: Programming, Algorithm designing, Data structure production<br><br>
+
+
+<b>Information Technology</b><br>
+• focuses on implementation, management, upkeep and debugging of computer systems in organizations<br>
+• Career paths: Network management, Software development, Cloud computing, Cybersecurity<br>
+• Key skills: Network management, Software development, Database management<br><br>
+
+
+<b>Software Engineering</b><br>
+• centers on designing, development, and upkeep of software systems<br>
+• Career paths: Software development, Systems analysis, Quality assurance<br>
+• Key skills: Software design and development, Project management<br><br>
+
+
+<b>Computer Engineering</b><br>
+• focuses on designing and building hardware and embedded systems<br>
+• Career paths: Hardware engineer, Embedded systems engineer, Network engineer<br>
+• Key skills: Embedded systems, Digital systems design, Computer architecture<br><br>
+
+
+<b>Data Science</b><br>
+• specializes in extraction of data from complex datasets using statistics and computation<br>
+• Career paths: Data analytics, Machine learning<br>
+• Key skills: Data analysis, Statistics, Machine learning
+</p>
+
+
+<h2>Analysis</h2>
+<p>
+The computing disciplines being different sects of computer degrees is a relevant distinction to make. Given the vast nature
+of computing, having dedicated disciplines to accommodate each facet helps narrow the scope of one’s preferred professional
+venture. The five major computing disciplines—Computer Science, Information Technology, Software Engineering, Computer
+Engineering, and Data Science—each specialize in different aspects of computing.
+<br><br>
+Computer Science functions as the foundation of the field, providing fundamentals such as programming and algorithmic
+thinking, which apply across the other disciplines. As technology advances, Computer Science is expected to lead computing
+to new heights.
+</p>
+
+<h2>References</h2>
+<p>
+• Denning, P. J. (1999). Computer science: The discipline.<br>
+• Denning, P. J., et al. (1989). Computing as a discipline.<br>
+• Archibald Jr, J. A. (1975). Computer science education for majors of other disciplines.<br>
+• Lunt, B. M., & Ekstrom, J. K. (2008). What distinguishes computing disciplines.<br>
+• Forte, A., & Guzdial, M. (2005). Motivation and nonmajors in computer science.
+</p>
+</body>
+    </div>
+    
+<script>
+window.onload = function () {
+    setTimeout(() => {
+        const overlay = document.getElementById("intro-overlay");
+        overlay.classList.add("fade-out");
+    }, 20); 
+};
+</script>
+</html>

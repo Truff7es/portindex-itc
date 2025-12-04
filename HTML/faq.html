@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+            opacity: 1;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .faq-image {
+            display: block; 
+            margin-left: 120px; 
+            width: 18%; 
+            height: auto; 
+            padding-top: 10px;
+        }
+        .faq-heading {
+            color: white; 
+            text-align: left; 
+            margin-left: 150px; 
+            margin-right: 25%;
+        }
+        .faq-text {
+            color: white; 
+            text-align: left; 
+            margin-left: 150px; 
+            padding-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <image src="images/faqcolor.png" class="faq-image"></image>
+
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+    <p class="faq-text">
+        Q: Is port.index a monetized site?<br>
+        A: No, port.index is completely free and not monetized in any way. It is a purely academic portfolio<br>
+        created for the sole intention of displaying my outputs in CIS1102N course and is not used for <br>
+        advertising, marketing, or generating revenue.<br><br>
+        Q: Who created this website?<br>
+        A: In compliance with my Introduction to Computing course requirement, this website was created by<b><i> John Paul Tautuan</i></b>,<br>
+        a student enrolled in the BSIT course of the University of San Carlos. It serves as a compilation of<br>
+        activities and outputs throughout the semester.<br><br>
+        Q: The style looks familiar. Did you use a template?<br>
+        A: No templates were used in the creation of port.index. The design and structural elements<br>
+        were inspired by the the warez/piracy subculture, but the ASCII<br> 
+        was a touch borrowed from CODEX, a well-known scene group. All coding and design work were done from<br>
+        scratch to ensure originality.<br><br>
+        Q: Can I use the content from this site for my own projects?<br>
+        A: The content on port.index is intended for educational purposes only. While you may reference the<br>
+        structure and design elements, please ensure to create your own original content and not directly<br>
+        copy any materials from this site.<br><br>
+        Q: Will port.index remain accessible after the course ends?<br>
+        A: It depends, port.index will remain accessible even after the completion of the CIS1102N course. However,<br>
+        please note that it may not be updated or maintained beyond the duration of the course.
+    </p>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("intro-overlay").classList.add("fade-out");
+            }, 20);
+        };
+    </script>
+</body>
+</html>

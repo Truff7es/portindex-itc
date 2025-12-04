@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+            opacity: 1;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+    </style>
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <image src="images/connectcolor.png" 
+        style="display:block; margin-left:auto; margin-left:120px; width:29%; height:auto; padding-top:10px;"></image>
+<h2 style="color:white; text-align:left; margin-left:150px; margin-right:25% padding-top;">Connect with me!</h2>
+
+<p style="color:white; text-align:left; margin-left:150px; padding-top:0px;">
+If you would like to raise any concerns regarding the website and its contents, or if you would<br>
+simply like to contact me, feel free to reach me at my designated communication channels!<br><br>
+Email address: 23103620@usc.edu.ph<br><br>
+Phone Number: lol no<br><br>
+Socials:<br>
+Instagram: @truff7es<br>
+Discord: @truff7es<br>
+Steam: @Hermitaph<br>
+League of Legends: @Truffles#DOOM<br>
+Valorant: @NBZpookiekiller#frfr<br>
+Genshin: 843520926<br>
+Honkai Star Rail: 803664642<br>
+</p>
+
+
+<script>
+    window.onload = function () {
+        setTimeout(() => {
+            document.getElementById("intro-overlay").classList.add("fade-out");
+        }, 20);
+    };
+</script>
+</body>
+</html>

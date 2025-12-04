@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .portfolio-title {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .portfolio-grid {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px 80px;
+            text-align: center;
+        }
+
+        .portfolio-item {
+            text-decoration: none;
+            color: white;
+        }
+
+        .preview-box {
+            width: 400px;
+            height: 200px;
+            background-color: #111;
+            border: 2px solid gray;
+            margin: 0 auto 12px auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preview-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-item span {
+            font-size: 18px;
+            margin-top: 8px;
+            display: block;
+        }
+
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+            opacity: 1;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1.5s ease;
+        }
+
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <image src="images/shop.gif" style="display:block; margin-left:auto; margin-right:auto; width:20%; padding-top:10px;"></image>
+    
+    <div class="portfolio-grid">
+        <a href="p1.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p1.png" alt="Portfolio 1 Preview"></div>
+            <span>Portfolio #1</span>
+        </a>
+
+        <a href="p2.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p2.png" alt="Portfolio 2 Preview"></div>
+            <span>Portfolio #2</span>
+        </a>
+
+        <a href="p3.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p3.png" alt="Portfolio 3 Preview"></div>
+            <span>Portfolio #3</span>
+        </a>
+
+        <a href="p4.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p4.png" alt="Portfolio 4 Preview"></div>
+            <span>Portfolio #4</span>
+        </a>
+
+        <a href="p5.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p5.png" alt="Portfolio 5 Preview"></div>
+            <span>Portfolio #5</span>
+        </a>
+
+        <a href="p6.html" class="portfolio-item">
+            <div class="preview-box"><img src="images/p6.png" alt="Portfolio 6 Preview"></div>
+            <span>Portfolio #6</span>
+        </a>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("intro-overlay").classList.add("fade-out");
+            }, 20); 
+        };
+    </script>
+</body>
+</html>

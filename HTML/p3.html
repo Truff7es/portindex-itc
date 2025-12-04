@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon3.png">
+    <title>port.index</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: "Courier New", monospace;
+        }
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(0.5);
+    opacity: 0.6;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1.5s ease;
+        }
+        #intro-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #intro-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .nav-buttons a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        .nav-buttons span {
+            color: white;
+            padding: 0 10px;
+        }
+        .nav-buttons img {
+            width: auto;
+            height: 80px;
+            margin: 0 10px;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        .port-section {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+            color: white;
+        }
+
+        .port-section h2 {
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro-overlay">
+        <img src="images/fuzz.gif" alt="Intro GIF">
+    </div>
+
+    <div class="navbar">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <span>||</span>
+            <a href="HTML/portindex.html">Portfolio</a>
+            <span>||</span>
+            <a href="HTML/faq.html">FAQ</a>
+            <span>||</span>
+            <a href="HTML/connect.html">Connect</a>
+            <image src="images/chains.png"></image>
+        </div>
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="port-section">
+        <h1>Portfolio 3</h1>
+        <h2>Number Systems</h2>
+        <p>
+        <b>Definition</b><br>
+        A number system is a structured method for expressing and interpreting numerical values using a set of symbols and rules. 
+        It provides a standardized way to represent quantities, perform calculations, and communicate numeric information. 
+        Different number systems, such as decimal, binary, octal, and hexadecimal, are used for various purposes in mathematics, 
+        computing, and digital systems.
+        <br><br>
+
+        <b>Decimal (Base-10)</b><br>
+        The decimal system uses digits 0–9 and is the standard number system for everyday counting, measurement, and arithmetic.
+        <br><br>
+
+        <b>Binary (Base-2)</b><br>
+        Binary uses only two digits, 0 and 1, and is the fundamental language of computers because it aligns with electrical on/off states.
+        <br><br>
+
+        <b>Octal (Base-8)</b><br>
+        The octal system uses digits 0–7 and is mainly used in computing as a shorter, more readable representation of binary values.
+        <br><br>
+
+        <b>Hexadecimal (Base-16)</b><br>
+        Hexadecimal uses digits 0–9 and letters A–F to represent values and is commonly used in programming, memory addressing, 
+        and digital graphics because it condenses binary into a compact form.
+        </p>
+
+        <h2>Analysis</h2>
+        <p>
+        Number systems are fundamental frameworks used to represent, process, and interpret numerical values in both human and 
+        computer contexts. These number systems serve as the symbolic language through which quantities, operations, and 
+        computational instructions are expressed.
+        <br><br>
+        The Decimal Number System serves as the standard for human-oriented calculations. Binary is indispensable in computing 
+        as digital devices function using electrical on/off signals. Octal and Hexadecimal serve specialized roles — octal for simplified 
+        binary grouping and hexadecimal for compact binary representation useful in debugging, memory addressing, and graphics.
+        <br><br>
+        Together, these systems form an interconnected structure essential to computing and digital communication.
+        </p>
+
+        <h2>References</h2>
+        <p>
+        • GeeksforGeeks — Number Systems in Computer Science<br>
+        • TutorialsPoint — Number Systems<br>
+        • Khan Academy — Number Systems and Bases<br>
+        • IBM Documentation — Binary, Octal, and Hexadecimal<br>
+        • Computer Science Field Guide — Number Systems
+        </p>
+
+        <h2>Getting to Know Me</h2>
+        <p>Presented by John Paul E. Tautuan<br>BSIT - 1<br>USC - Talamban</p>
+    </div>
+
+<script>
+window.onload = function () {
+    setTimeout(() => {
+        document.getElementById("intro-overlay").classList.add("fade-out");
+    }, 20);
+};
+</script>
+</body>
+</html>
